@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Piedra, papel o tijera</title>
+</head>
+
+<body>
+
+    <p class="text_ppt">PIEDRA, PAPEL O TIJERA</p>
+
+    <div class="contienda">
+        <div class="lapc">
+            <p>ELECCIÓN DE LA PC</p>
+            <div class="el">
+                <p id="signo_pregunta">?</p>
+                <img id="e1" src="./img/e_pi.jpg" width="194px" alt="">
+                <img id="e2" src="./img/e_pa.jpg" width="194px" alt="">
+                <img id="e3" src="./img/e_ti.jpg" width="194px" alt="">
+            </div>
+        </div>
+        <div class="tu_eleccion">
+            <p>TU ELECCIÓN</p>
+            <div class="yo">
+                <img id="f1" src="./img/y_pi.jpg" width="194px" alt="piedra">
+                <img id="f2" src="./img/y_pa.jpg" width="194px" alt="piedra">
+                <img id="f3" src="./img/y_ti.jpg" width="194px" alt="piedra">
+            </div>
+        </div>
+    </div>
+
+    <div class="resultado">
+        <div id="ganaste"><img src="./img/ganaste.png" width="80px" alt=""><p>GANASTE!!!!</p></div>
+        <div id="empataste"><img src="./img/empate.png" width="80px" alt=""><p>Empate</p></div>
+        <div id="perdiste"><img src="./img/perdiste.png" width="80px" alt=""><p>Perdiste</p></div>
+    </div>
+
+    <div class="eleccion">
+        <div class="elecc1">
+            <button onclick="btn_presionado(this.id)" id="1" class="botones"><img src="./img/y_pi.jpg" width="200px"
+                    alt=""></button>
+        </div>
+        <div class="elecc1">
+            <button onclick="btn_presionado(this.id)" id="2" class="botones"><img src="./img/y_pa.jpg" width="200px"
+                    alt=""></button>
+        </div>
+        <div class="elecc1">
+            <button onclick="btn_presionado(this.id)" id="3" class="botones"><img src="./img/y_ti.jpg" width="200px"
+                    alt=""></button>
+        </div>
+    </div>
+    <p class="puntu">SELECCIONÁ ALGUNA DE ESTAS TRES OPCIONES</p>
+
+
+    <!-- Métrica  -->
+    <p class="text_puntaje">PUNTUACIÓN</p>
+    <table>
+        <tr>
+            <th>JUGADOS</th>
+            <th>Ganados</th>
+            <th>Empatados</th>
+            <th>Perdidos</th>
+        </tr>
+        <tr>
+            <td id="pj">0</td>
+            <td id="pg">0</td>
+            <td id="pe">0</td>
+            <td id="pp">0</td>
+        </tr>
+    </table>
+
+
+    <button class="btn_reset" id="btn_reset">COMENZAR DE NUEVO</button>
+
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

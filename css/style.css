@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+.text_ppt {
+    margin:.2em;
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 3em;
+    color: #fff;
+}
+
+.lapc,
+.tu_eleccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.lapc p,
+.tu_eleccion p{
+    color: #fff;
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+}
+
+.contienda,
+.eleccion {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    align-items:center;
+}
+
+.contienda .el{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signo_pregunta{
+    font-size: 4em;
+}
+
+.contienda .el,
+.contienda .yo,
+.elecc1{
+    border: 2px solid #000;
+    margin: .5em;
+}
+
+.resultado{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 2em;
+    color: #fff;
+}
+
+#ganaste,
+#empataste,
+#perdiste{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#ganaste{
+    color: rgb(6, 253, 6);
+}
+
+#empataste{
+    color:yellow;
+}
+
+#perdiste{
+    color:red;
+}
+
+.el,
+.yo {
+    width: 200px;
+    height: 100px;
+    border: 3px solid #000;
+}
+
+.puntu{
+    text-align: center;
+    margin-bottom: 1em;
+    color:#fff;
+}
+
+.text_puntaje{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color:#fff;
+}
+
+table{
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+}
+
+th,
+td{
+    width: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: .5em;
+}
+
+.btn_reset{
+    display: block;
+    margin: auto;
+    padding: .8em 1.2em;
+    margin-top: 1em;
+    border-radius: 1em;
+    font-weight: bolder;
+}
+
+.btn_reset:hover{
+    background-color: indigo;
+    color: #fff;
+    cursor: pointer;
+}
